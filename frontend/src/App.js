@@ -105,10 +105,11 @@ function App() {
               <IconButton edge="start" className={classes.menuButton} onClick={(event, newValue) => { setValue(0) }} color="inherit" aria-label="menu" to='/' component={Link}>
                 <img src={logo_nsf} alt='Logo' height='60'/>
               </IconButton>
+              
+              <div style={{flexGrow: 1, marginRight: 140}}>
+                <p style={{fontFamily: 'Encode Sans SC'}} className={classes.padding}>Nsf Infews Project</p>
+              </div>
               <ThemeProvider theme={customTheme}>
-                <div style={{flexGrow: 1, marginRight: 140}}>
-                  <Typography className={classes.padding}>Nsf Infews Project</Typography>
-                </div>
                 <StyledTabs value={value} onChange={handleChange} aria-label="styled tabs navbar">
                   <StyledTab label="Home" to='/home' component={Link}/>
                   <StyledTab label="Background" to='/background' component={Link}/>
